@@ -1,29 +1,3 @@
-### **GitHub Repository Structure**
-
-Suggested GitHub repository structure:
-
-```
-/mongodb-dev-best-practices
-├── src/
-│   ├── data-modeling/
-│   │   ├── hr_chatbot_schema.js
-│   │   └── schema_validation.js
-│   ├── performance-optimization/
-│   │   ├── auto_iops_scaling.js
-│   │   ├── index_build_optimization.js
-│   │   ├── cursor_based_pagination.js
-│   │   └── health_check_script.js
-│   └── data-sync/
-│       ├── atlas_triggers_sync.js
-│       └── change_stream_resumability.js
-├── README.md
-└── LICENSE
-```
-
------
-
-### **README.md Content**
-
 # MongoDB Development Best Practices: A Code Repository
 
 This repository contains a collection of code snippets and scripts demonstrating best practices for developing scalable and performant applications with MongoDB. The examples are derived from real-world case studies, addressing common challenges faced by development teams.
