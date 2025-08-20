@@ -2,21 +2,6 @@
 
 This repository contains a collection of code snippets and scripts demonstrating best practices for developing scalable and performant applications with MongoDB. The examples are derived from real-world case studies, addressing common challenges faced by development teams.
 
-## Table of Contents
-
-1.  [Data Modeling & Schema Design](https://github.com/kevinlkt0513/mongodb-dev-best-practices/tree/main/src/data-modeling)
-      * [hr\_chatbot\_schema.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/data-modeling/hr_chatbot_schema.js)
-      * [schema\_validation.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/data-modeling/schema_validation.js)
-2.  [Performance & Cost Optimization](https://github.com/kevinlkt0513/mongodb-dev-best-practices/tree/main/src/performance-optimization)
-      * [find\_unused\_indexes.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/performance-optimization/find_unused_indexes.js)
-      * [index\_build\_optimization.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/performance-optimization/index_build_optimization.js)
-      * [cursor\_based\_pagination.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/performance-optimization/cursor_based_pagination.js)
-      * [auto\_iops\_scaling.js](https://www.google.com/search?q=%23auto_iops_scalingjs)
-      * [health\_check\_script.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/performance-optimization/auto_iops_scaling.js)
-3.  [Real-Time Data Synchronization](https://github.com/kevinlkt0513/mongodb-dev-best-practices/tree/main/src/data-sync)
-      * [atlas\_triggers\_sync.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/data-sync/atlas_triggers_sync.js)
-      * [change\_stream\_resumability.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/data-sync/change_stream_resumability.js)
-
 ## 1\. Data Modeling & Schema Design
 
 Effective data modeling is crucial for application performance. These examples showcase flexible schema design patterns to solve complex business problems.
