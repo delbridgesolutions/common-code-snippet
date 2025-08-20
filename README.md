@@ -4,18 +4,18 @@ This repository contains a collection of code snippets and scripts demonstrating
 
 ## Table of Contents
 
-1.  [Data Modeling & Schema Design](https://www.google.com/search?q=%231-data-modeling--schema-design)
-      * [hr\_chatbot\_schema.js](https://www.google.com/search?q=%23hr_chatbot_schemajs)
-      * [schema\_validation.js](https://www.google.com/search?q=%23schema_validationjs)
-2.  [Performance & Cost Optimization](https://www.google.com/search?q=%232-performance--cost-optimization)
-      * [find\_unused\_indexes.js](https://www.google.com/search?q=%23find_unused_indexesjs)
-      * [index\_build\_optimization.js](https://www.google.com/search?q=%23index_build_optimizationjs)
-      * [cursor\_based\_pagination.js](https://www.google.com/search?q=%23cursor_based_paginationjs)
+1.  [Data Modeling & Schema Design](https://github.com/kevinlkt0513/mongodb-dev-best-practices/tree/main/src/data-modeling)
+      * [hr\_chatbot\_schema.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/data-modeling/hr_chatbot_schema.js)
+      * [schema\_validation.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/data-modeling/schema_validation.js)
+2.  [Performance & Cost Optimization](https://github.com/kevinlkt0513/mongodb-dev-best-practices/tree/main/src/performance-optimization)
+      * [find\_unused\_indexes.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/performance-optimization/find_unused_indexes.js)
+      * [index\_build\_optimization.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/performance-optimization/index_build_optimization.js)
+      * [cursor\_based\_pagination.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/performance-optimization/cursor_based_pagination.js)
       * [auto\_iops\_scaling.js](https://www.google.com/search?q=%23auto_iops_scalingjs)
-      * [health\_check\_script.js](https://www.google.com/search?q=%23health_check_scriptjs)
-3.  [Real-Time Data Synchronization](https://www.google.com/search?q=%233-real-time-data-synchronization)
-      * [atlas\_triggers\_sync.js](https://www.google.com/search?q=%23atlas_triggers_syncjs)
-      * [change\_stream\_resumability.js](https://www.google.com/search?q=%23change_stream_resumabilityjs)
+      * [health\_check\_script.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/performance-optimization/auto_iops_scaling.js)
+3.  [Real-Time Data Synchronization](https://github.com/kevinlkt0513/mongodb-dev-best-practices/tree/main/src/data-sync)
+      * [atlas\_triggers\_sync.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/data-sync/atlas_triggers_sync.js)
+      * [change\_stream\_resumability.js](https://github.com/kevinlkt0513/mongodb-dev-best-practices/blob/main/src/data-sync/change_stream_resumability.js)
 
 ## 1\. Data Modeling & Schema Design
 
