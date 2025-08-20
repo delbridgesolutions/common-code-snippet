@@ -1,24 +1,24 @@
-[cite_start]// 1. Using _id or ordered fields [cite: 254]
-[cite_start]// This is the simplest and most efficient method. [cite: 255]
+// 1. Using _id or ordered fields
+// This is the simplest and most efficient method.
 
-[cite_start]// First query (get the first page) [cite: 256]
-[cite_start]const query1 = db.posts.find({}).sort({ _id: 1 }).limit(10); [cite: 257]
+// First query (get the first page)
+const query1 = db.posts.find({}).sort({ _id: 1 }).limit(10);
 
-[cite_start]// Subsequent queries (get the next page) [cite: 258]
-[cite_start]// `lastId` is the _id of the last document from the previous query [cite: 259]
-[cite_start]const query2 = db.posts.find({ _id: { $gt: lastId } }).sort({ _id: 1 }).limit(10); [cite: 259]
+// Subsequent queries (get the next page)
+// `lastId` is the _id of the last document from the previous query
+const query2 = db.posts.find({ _id: { $gt: lastId } }).sort({ _id: 1 }).limit(10);
 
-[cite_start]// 2. For complex sorting scenarios [cite: 260]
-[cite_start]// This method handles sorting by multiple fields. [cite: 261]
+// 2. For complex sorting scenarios
+// This method handles sorting by multiple fields.
 
-[cite_start]// First query (get the first page) [cite: 262]
-[cite_start]const query3 = db.leaderboard.find({}).sort({ score: -1, _id: 1 }).limit(10); [cite: 263]
+// First query (get the first page)
+const query3 = db.leaderboard.find({}).sort({ score: -1, _id: 1 }).limit(10);
 
-[cite_start]// Subsequent queries (get the next page) [cite: 264]
-[cite_start]// `lastScore` and `lastId` are from the last document of the previous query [cite: 265]
+// Subsequent queries (get the next page)
+// `lastScore` and `lastId` are from the last document of the previous query
 const query4 = db.leaderboard.find({
   $or: [
-    [cite_start]{ score: { $lt: lastScore } }, [cite: 267]
-    [cite_start]{ score: lastScore, _id: { $gt: lastId } } [cite: 268]
+    { score: { $lt: lastScore } },
+    { score: lastScore, _id: { $gt: lastId } }
   ]
-[cite_start]}).sort({ score: -1, _id: 1 }).limit(10); [cite: 269]
+}).sort({ score: -1, _id: 1 }).limit(10);

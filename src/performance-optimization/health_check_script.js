@@ -1,17 +1,17 @@
-[cite_start]// This script automates the collection of detailed statistics for databases and collections. [cite: 565]
+// This script automates the collection of detailed statistics for databases and collections.
 
-[cite_start]var collections = db.getCollectionNames(); [cite: 576]
-[cite_start]var totalDataSize = 0; [cite: 577]
-[cite_start]var totalStorageSize = 0; [cite: 578]
-[cite_start]var totalIndexSize = 0; [cite: 579]
-[cite_start]var totalDocumentCount = 0; [cite: 580]
+var collections = db.getCollectionNames();
+var totalDataSize = 0;
+var totalStorageSize = 0;
+var totalIndexSize = 0;
+var totalDocumentCount = 0;
 
 collections.forEach(function(collectionName) {
-    [cite_start]var stats = db.getCollection(collectionName).stats(); [cite: 582]
-    [cite_start]totalDataSize += stats.size; [cite: 583]
-    [cite_start]totalStorageSize += stats.storageSize; [cite: 585]
-    [cite_start]totalIndexSize += stats.totalIndexSize; [cite: 585]
-    [cite_start]totalDocumentCount += stats.count; [cite: 586]
+    var stats = db.getCollection(collectionName).stats();
+    totalDataSize += stats.size;
+    totalStorageSize += stats.storageSize;
+    totalIndexSize += stats.totalIndexSize;
+    totalDocumentCount += stats.count;
     
     print("Collection: " + collectionName +
           ", Storage: " + (stats.storageSize / (1024 * 1024)).toFixed(2) + " MB" +
